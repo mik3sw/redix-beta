@@ -1,0 +1,217 @@
+@media only screen and (max-width: 768px) {
+
+    /* Gestione animazione e testo della herosection */
+
+    nav{
+        display: none;
+    }
+
+    .hero-text{
+        color: white;
+        font-weight: 600;
+        font-size: 2rem;
+        /* width: 50%; */
+        animation: text-size 1s cubic-bezier(.69,.02,.71,.93) 2s forwards;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        z-index: 3;
+    }
+
+    .hero-text2{
+        margin-left: 0%
+    }
+
+    
+    .row-1{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .row-2{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        animation: text-shift 1s cubic-bezier(.69,.02,.71,.93) 2s forwards;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .row-3{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .arrow{
+        width: 100%;
+        height: 2.5rem;
+        position: relative;
+        left: -100%; /* Posizione iniziale fuori dallo schermo */
+        animation: slideFromLeft 1s cubic-bezier(.69,.02,.71,.93) 2.5s forwards;
+    }
+
+    @keyframes slideFromLeft {
+    to {
+        left: 0; /* Posizione finale */
+    }
+    }
+
+    @keyframes arrowsize {
+        to {
+        width: 15%; /* Posizione finale */
+        height: 2.5rem;
+        left: 0;
+        }
+    }
+
+    .overflow-hidden{
+        left: -100%;
+        overflow: hidden;
+        width: 0%;
+        height: 2.5rem;
+
+        animation: arrowsize 1s cubic-bezier(.69,.02,.71,.93) 2s forwards; /* Durata e direzione dell'animazione */
+    }
+
+
+
+    @keyframes text-size {
+        to{
+            font-size: 2.5rem;
+        }
+        
+    }
+
+
+    @keyframes text-shift {
+        to{
+            margin-left: 0%;
+        }
+        
+    }
+
+        
+    .circle-text{
+        font-weight: 400;
+        font-size: 0.8rem;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 5px 5px;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 0px;
+        animation: circle-text 1s cubic-bezier(.69,.02,.71,.93) 2.5s forwards;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .circle-text:hover{
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+    }
+
+    .circle-text-inside{
+        animation: circle-text2 1s cubic-bezier(.69,.02,.71,.93) 5s forwards; 
+        /* opacity: 0; */
+        display: none;
+    }
+
+    @keyframes circle-text {
+        to{
+            width: 100px;
+        }
+        
+        0% {
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+            /* display: none; */
+        }
+        100% {
+            opacity: 1;
+        }
+        
+    }
+
+    @keyframes circle-text2 {
+        
+        0% {
+            opacity: 0;
+        }
+        90%{
+            opacity: 0;
+            display: none;
+        }
+        100% {
+            opacity: 1;
+            display: block;
+        }
+        
+    }
+
+    .hero-text-bottom-left2{
+        font-size: 1rem;
+        position: absolute;
+        bottom: 50px;
+        left: 5px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 30px;
+        padding: 5px 30px;
+        display: none;
+    }
+
+    .hero-text-bottom-right{
+        font-size: 1rem;
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        /* border: 1px solid white; */
+        color: white;
+        /* border-radius: 30px; */
+        /* padding: 5px 60px; */
+    }
+
+
+    .got-idea{
+        display: flex;
+        margin: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 150px;
+      }
+    
+      .got-idea:hover .got-idea-button{
+        transform: scale(1.2);
+      }
+    
+      .got-idea-text{
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    
+      .got-idea-button{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: var(--blue);
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .got-idea-button-image{
+        transform: rotate(-45deg);
+      }
+  }

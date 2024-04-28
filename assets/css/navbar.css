@@ -1,0 +1,99 @@
+nav{
+    background-color: transparent;
+    width: calc(50% - 60px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    /* background-color:var(--white); */
+    border-radius: 1.5rem;
+    z-index: 1000;
+    
+}
+
+.links{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* margin-right: 10px; */
+    /* background-color: blue; */
+}
+
+.links2{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /* border: 1px solid black; */
+    color: black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    /* cursor: pointer; */
+    transition: all 0.5s;
+    width: 0px;
+    animation: navbar-animation 1s cubic-bezier(.69,.02,.71,.93) 1s 1 forwards;
+    opacity: 0;
+    margin-right: 10px;
+
+}
+
+
+.nav-link:hover{
+    background-color: rgb(25, 102, 218);
+    color: white;
+
+}
+
+@keyframes navbar-animation {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    /* Aggiungi animazione opacità */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
+.active{
+    background-color: rgb(25, 102, 218);
+    color: white;
+}
+
+
+.link-text{
+    animation: nav-text 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.1s 1 backwards;
+}
+
+
+@keyframes nav-text {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

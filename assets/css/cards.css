@@ -1,0 +1,413 @@
+#history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 150px;
+
+}
+
+
+.card-neo{
+    background-color: rgb(174, 174, 174);
+    border-radius: 2rem;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    /* padding: 20px; */
+    
+}
+
+.card-neo-text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 30px;
+    color: white;
+    
+}
+
+.card-neo-text-2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 20px;
+    color: white;
+    
+}
+
+.card-neo-badge{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 20px;
+    color: white;
+    width: min-content;
+    font-weight: 600;
+}
+
+.card-neo-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white);
+    width: 70px;
+    height: 70px;
+    border-radius: 1.5rem 0 0 0;
+}
+
+.card-neo-bottom1{
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    border-radius: 0 0 1.5rem 0;
+    box-shadow: 30px 0 0 0 var(--white);
+}
+
+.card-neo-bottom2{
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 70px;
+    border-radius: 0 0 1.5rem 0;
+    box-shadow: 0 30px 0 0 var(--white);
+}
+
+.card-neo-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.card-neo-button img{
+    width: 70%;
+}
+
+.card-neo-button:hover{
+    transform: rotate(45deg);
+}
+
+
+
+
+.cards-neo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 20px; */
+    gap: 20px;
+    
+}
+
+.col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.c1{
+    height: 500px;
+    width: 100%;
+    background-image: url("../images/bg13.jpg");
+    background-position: center;
+    /* background-size: cover; */
+    background-size: 200%;
+    /* margin-right: 10px; */
+    transition: all 0.5s; 
+}
+.c1:hover{
+    background-size: 170%;
+}
+
+.c2{
+    height: 240px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-image: url("../images/testbg.jpg");
+    background-position: center;
+    background-size: 200%;
+    /* margin-left: 20px; */
+    transition: all 0.5s; 
+}
+
+.c2:hover{
+    background-size: 170%;
+}
+
+.c3{
+    height: 240px;
+    margin-top: 10px;
+    width: 100%;
+    background-image: url("../images/bg15.jpg");
+    background-position: center;
+    background-size: 200%;
+    /* margin-left: 20px; */
+    transition: all 0.5s; 
+}
+
+.c3:hover{
+    background-size: 170%;
+}
+
+.card-carousel{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+/* 
+.text-card{
+    overflow: hidden;
+} */
+
+/* .text-container-card-slider{
+    animation: slideText 15s infinite;
+} */
+/* 
+.text-container-card {
+} */
+/* .text-container-card {
+    display: flex;
+    flex-direction: column;
+    /* Imposta altezza, larghezza e stili desiderati */
+    /* animation: slide 15s cubic-bezier(0.075, 0.82, 0.165, 1) infinite; 
+} */
+
+
+
+/* .card-carousel-indicator-container{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.card-carousel-indicator{
+    background-color: rgb(177, 177, 177);
+    height: 10px;
+    width: 40px;
+    border-radius: 30px;
+}
+
+.card-carousel-indicator-active{
+    background-color: white;
+} */
+
+/* .image-card{
+    flex: 3;
+    height: 500px;
+
+    background-color: blue;
+    border-radius: 2rem;
+
+    margin-top: 0;
+
+} */
+
+.c4{
+    height: 500px;
+    margin-top: 0px;
+    /* margin-left: 10px; */
+    width: 100%;
+    background-image: url("../images/bg5.jpg");
+    background-position: center;
+    background-size: cover;
+    flex: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-carousel {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-card {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.text-container-card-slider {
+    display: flex;
+    flex-direction: row;
+    width: 300%; /* Larghezza totale di tutte le slide */
+    /* animation: slideText 15s infinite; */
+}
+
+
+
+.text-container-card {
+    flex: 1;
+    /* padding: 20px; */
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0%);
+}
+
+@keyframes slideText {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+}
+
+.card-carousel-indicator-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* transform: translateX(-50%); */
+}
+
+.card-carousel-indicator {
+    background-color: rgb(177, 177, 177);
+    height: 10px;
+    width: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card-carousel-indicator-active {
+    background-color: white;
+}
+
+
+
+/* .image-card{
+    flex: 3;
+    height: 500px;
+
+    background-color: blue;
+    border-radius: 2rem;
+
+    margin-top: 0;
+
+} */
+.image-card {
+    flex: 3;
+    height: 500px;
+    background-color: blue;
+    border-radius: 2rem;
+
+    margin-top: 0;
+    /* background-image: url("../images/bg2.jpg");
+    background-position: left center;
+    background-size: cover; */
+    position: relative;
+    overflow: hidden;
+    
+    /* padding: 20px; */
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0%);
+    /* animation: slideImage 15s infinite; */
+}
+
+.image-card-slider {
+    
+    display: flex;
+    flex-direction: row;
+    width: 300%; /* Larghezza totale di tutte le slide */
+    height: 100%;
+    /* animation: slideText 15s infinite; */
+}
+
+.image-card-bg{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0%);
+    
+}
+
+.bg1{
+    background-color: red;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.bg2{
+    background-color: green;
+    background-image: url("../images/bg15.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.bg3{
+    background-color: blue;
+    background-image: url("../images/brain.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes slideImage {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+
+
+.card-neo-bottom-text{
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
+    font-size: 1.3rem;
+    color: white;
+}
