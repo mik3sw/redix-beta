@@ -2,6 +2,14 @@
 
     /* Gestione animazione e testo della herosection */
 
+    .hero2{
+        height: calc(50% - 50px);
+        width: 100%;
+        position: relative;
+        margin-bottom: 100px;
+    
+    }
+
     nav{
         display: none;
     }
@@ -174,7 +182,7 @@
     .hero-text-bottom-right{
         font-size: 1rem;
         position: absolute;
-        bottom: 50px;
+        bottom: 0px;
         right: 20px;
         /* border: 1px solid white; */
         color: white;
