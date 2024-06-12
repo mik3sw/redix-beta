@@ -127,7 +127,6 @@
     .c1{
         height: 500px;
         width: 100%;
-        background-image: url("../images/bg13.jpg");
         background-position: center;
         /* background-size: cover; */
         background-size: 400%;
@@ -142,7 +141,6 @@
         height: 240px;
         margin-bottom: 10px;
         width: 100%;
-        background-image: url("../images/testbg.jpg");
         background-position: center;
         background-size: 200%;
         /* margin-left: 20px; */
@@ -157,7 +155,6 @@
         height: 240px;
         margin-top: 10px;
         width: 100%;
-        background-image: url("../images/bg15.jpg");
         background-position: center;
         background-size: 200%;
         /* margin-left: 20px; */
@@ -189,7 +186,6 @@
         margin-top: 0px;
         /* margin-left: 10px; */
         width: 100%;
-        background-image: url("../images/bg5.jpg");
         background-position: center;
         background-size: cover;
         flex: 2;
@@ -299,19 +295,16 @@
     
     .bg1{
         background-color: red;
-        background-image: url("../images/bg.jpg");
         background-position: center;
         background-size: cover;
     }
     .bg2{
         background-color: green;
-        background-image: url("../images/bg15.jpg");
         background-position: center;
         background-size: cover;
     }
     .bg3{
         background-color: blue;
-        background-image: url("../images/brain.jpg");
         background-position: center;
         background-size: cover;
     }
