@@ -54,7 +54,6 @@ gsap.registerPlugin(ScrollTrigger)
 //   });
 // });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".trustedby-slider");
   const slider2 = document.querySelector(".trustedby-slider2");
@@ -66,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const rect = trustedBySection.getBoundingClientRect();
       isSliderVisible = rect.top < window.innerHeight && rect.bottom >= 0;
   }
+
+  checkSliderVisibility();
 
   window.addEventListener("scroll", function () {
       checkSliderVisibility();
