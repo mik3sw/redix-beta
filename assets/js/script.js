@@ -67,11 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function animateSliders() {
-      if (isSliderVisible) {
-          const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-          gsap.to(slider, { x: `-${scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
-          gsap.to(slider2, { x: `${-70 + scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
-      }
+    console.log(isSliderVisible)
+    if (isSliderVisible) {
+        const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        gsap.to(slider, { x: `-${scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
+        gsap.to(slider2, { x: `${-70 + scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
+    }
   }
 
   window.addEventListener("scroll", function () {
