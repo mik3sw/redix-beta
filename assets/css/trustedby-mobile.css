@@ -27,7 +27,7 @@
     }
 
     .trustedby-slider {
-        width: 300%;
+        width: 600%;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -35,7 +35,7 @@
         scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
     }
     .trustedby-slider2 {
-        width: 300%;
+        width: 600%;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -47,12 +47,21 @@
 
     .trustedby-logo {
         /* width: 100px; */
-        width: 300px;
+        width: 150px;
         /* height: 100px; */
         /* background-color: gray; */
         margin-right: 50px;
         /* position: relative; */
         /* background-color: blue; */
+        border-radius: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.5); /* Colore bianco con opacità 70% */
+        backdrop-filter: blur(10px); /* Effetto blur */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .trustedby-logo-image {

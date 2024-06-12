@@ -333,15 +333,11 @@ body{
     color: white;
 }
 
-.circle-text-inside{
-    animation: circle-text2 1s cubic-bezier(.69,.02,.71,.93) 5s forwards; 
-    /* opacity: 0; */
-    display: none;
-}
+
 
 @keyframes circle-text {
     to{
-        width: 200px;
+        width: 100%;
     }
     
     0% {
