@@ -66,22 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
       isSliderVisible = rect.top < window.innerHeight && rect.bottom >= 0;
   }
 
-  checkSliderVisibility();
-
-  window.addEventListener("scroll", function () {
-      checkSliderVisibility();
-
+  function animateSliders() {
       if (isSliderVisible) {
           const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-
-          // Usando GSAP per animare gli slider
           gsap.to(slider, { x: `-${scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
           gsap.to(slider2, { x: `${-70 + scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
       }
+  }
+
+  window.addEventListener("scroll", function () {
+      checkSliderVisibility();
+      animateSliders();
   });
 
-  // Verifica la visibilità al caricamento iniziale
+  // Verifica la visibilità al caricamento iniziale e forza l'animazione
   checkSliderVisibility();
+  animateSliders();
 });
 
 
