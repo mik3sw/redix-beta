@@ -447,6 +447,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 150px;
+    cursor: pointer;
   }
 
   .got-idea:hover .got-idea-button{

@@ -88,6 +88,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .footer-card2-text{
@@ -117,6 +118,7 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     color: gray;
+    cursor: pointer;
 }
 
 .footer-row-2-text{

@@ -34,6 +34,17 @@ document.getElementById('joinus').addEventListener('click', function() {
   window.location.href = 'https://www.redix.it/en/Home/LavoraConNoi';
 });
 
+document.getElementById('linkedin').addEventListener('click', function() {
+  window.location.href = 'https://www.linkedin.com/company/2437581/';
+});
+
+document.getElementById('consultation').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/Contatti';
+});
+
+document.getElementById('idea').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/Contatti';
+});
 
 
 
