@@ -29,10 +29,11 @@
     .trustedby-slider {
         width: 600%;
         display: flex;
-        justify-content: end;
+        justify-content: start;
         align-items: center;
         padding: 10px;
         scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
+        transform: translateX(-100px);
     }
     .trustedby-slider2 {
         width: 600%;
@@ -41,16 +42,17 @@
         align-items: center;
         padding: 10px;
         scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
+        transform: translateX(-40px);
         /* transform: translateX(-200%); */
         /* margin-right: 2000px; */
     }
 
     .trustedby-logo {
         /* width: 100px; */
-        width: 150px;
+        width: 100px;
         /* height: 100px; */
         /* background-color: gray; */
-        margin-right: 50px;
+        margin-right: 10px;
         /* position: relative; */
         /* background-color: blue; */
         border-radius: 20px;
@@ -58,7 +60,7 @@
         background: rgba(255, 255, 255, 0.5); /* Colore bianco con opacità 70% */
         backdrop-filter: blur(10px); /* Effetto blur */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        height: 100px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;

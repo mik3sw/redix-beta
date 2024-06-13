@@ -27,10 +27,11 @@
 .trustedby-slider {
     width: 300%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     padding: 10px;
     scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
+    transform: translateX(-150px);
 }
 .trustedby-slider2 {
     width: 300%;
@@ -39,7 +40,8 @@
     align-items: center;
     padding: 10px;
     scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
-    /* transform: translateX(-200%); */
+    transform: translateX(-40px);
+    /* transform: translateX(-300%); */
     /* margin-right: 2000px; */
 }
 
@@ -48,7 +50,7 @@
     width: 250px;
     /* height: 100px; */
     /* background-color: gray; */
-    margin-right: 100px;
+    margin-right: 20px;
     /* position: relative; */
     /* background-color: blue; */
     border-radius: 20px;

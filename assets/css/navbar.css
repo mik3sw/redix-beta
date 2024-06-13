@@ -48,6 +48,7 @@ nav{
     animation: navbar-animation 1s cubic-bezier(.69,.02,.71,.93) 1s 1 forwards;
     opacity: 0;
     margin-right: 10px;
+    cursor: pointer;
 
 }
 

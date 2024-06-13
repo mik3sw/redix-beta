@@ -1,5 +1,42 @@
 // AOS.init();
 
+
+const gridItems = document.querySelectorAll('.card');
+
+function revealGridItems() {
+  gridItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.opacity = '1';
+    //   item.style.transform = 'scale(1)'; 
+    }, index * 100); // Regola la velocità dell'animazione cambiando il valore di 500 (in millisecondi)
+  });
+}
+
+revealGridItems();
+
+document.getElementById('contactus-btn1').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/Contatti';
+});
+
+document.getElementById('contactus-btn2').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/Contatti';
+});
+
+document.getElementById('ourvalues').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/ChiSiamo';
+});
+
+document.getElementById('ourstory').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/Storia';
+});
+
+document.getElementById('joinus').addEventListener('click', function() {
+  window.location.href = 'https://www.redix.it/en/Home/LavoraConNoi';
+});
+
+
+
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     const slider = document.querySelector(".trustedby-slider");
 //     const slider2 = document.querySelector(".trustedby-slider2");
@@ -27,63 +64,58 @@
 //     // Verifica la visibilità al caricamento iniziale
 //     checkSliderVisibility();
 // });
-gsap.registerPlugin(ScrollTrigger) 
+//gsap.registerPlugin(ScrollTrigger);
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const slider = document.querySelector(".trustedby-slider");
 //   const slider2 = document.querySelector(".trustedby-slider2");
+//   const trustedBySection = document.getElementById("trustedby");
 
-//   gsap.to(slider, {
-//     x: "-100%",
-//     scrollTrigger: {
-//       trigger: "#trustedby",
-//       start: "top top",
-//       end: "bottom bottom",
-//       scrub: true
-//     }
-//   });
+//   let isSliderVisible = false;
 
-//   gsap.to(slider2, {
-//     x: "100%",
-//     scrollTrigger: {
-//       trigger: "#trustedby",
-//       start: "top top",
-//       end: "bottom bottom",
-//       scrub: true
+//   function checkSliderVisibility() {
+//     if (!trustedBySection) return;
+//     const rect = trustedBySection.getBoundingClientRect();
+//     isSliderVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+//   }
+
+//   function debounce(func, wait = 10, immediate = true) {
+//     let timeout;
+//     return function() {
+//       const context = this, args = arguments;
+//       const later = function() {
+//         timeout = null;
+//         if (!immediate) func.apply(context, args);
+//       };
+//       const callNow = immediate && !timeout;
+//       clearTimeout(timeout);
+//       timeout = setTimeout(later, wait);
+//       if (callNow) func.apply(context, args);
+//     };
+//   }
+
+//   function animateSliders() {
+//     if (isSliderVisible) {
+//       requestAnimationFrame(() => {
+//         const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+//         gsap.to(slider, { x: `-${scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
+//         gsap.to(slider2, { x: `${-70 + scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
+//       });
 //     }
-//   });
+//   }
+
+//   const handleScroll = debounce(function() {
+//     checkSliderVisibility();
+//     animateSliders();
+//   }, 10);
+
+//   window.addEventListener("scroll", handleScroll);
+
+//   // Verifica la visibilità al caricamento iniziale e forza l'animazione
+//   checkSliderVisibility();
+//   animateSliders();
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.querySelector(".trustedby-slider");
-  const slider2 = document.querySelector(".trustedby-slider2");
-  const trustedBySection = document.getElementById("trustedby");
-
-  let isSliderVisible = false;
-
-  function checkSliderVisibility() {
-      const rect = trustedBySection.getBoundingClientRect();
-      isSliderVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-  }
-
-  function animateSliders() {
-    console.log(isSliderVisible)
-    if (isSliderVisible) {
-        const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-        gsap.to(slider, { x: `-${scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
-        gsap.to(slider2, { x: `${-70 + scrollPercentage}%`, duration: 0.5, ease: "power1.out" });
-    }
-  }
-
-  window.addEventListener("scroll", function () {
-      checkSliderVisibility();
-      animateSliders();
-  });
-
-  // Verifica la visibilità al caricamento iniziale e forza l'animazione
-  checkSliderVisibility();
-  animateSliders();
-});
 
 
 
@@ -133,18 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const gridItems = document.querySelectorAll('.card');
 
-function revealGridItems() {
-  gridItems.forEach((item, index) => {
-    setTimeout(() => {
-      item.style.opacity = '1';
-    //   item.style.transform = 'scale(1)'; 
-    }, index * 100); // Regola la velocità dell'animazione cambiando il valore di 500 (in millisecondi)
-  });
-}
-
-revealGridItems();
 
 
 
@@ -194,54 +215,54 @@ revealGridItems();
 
 
 
-let currentSlide = 0;
-const slides = document.querySelectorAll('.text-container-card');
-const indicators = document.querySelectorAll('.card-carousel-indicator');
-const imageCard = document.querySelector('.image-card');
+// let currentSlide = 0;
+// const slides = document.querySelectorAll('.text-container-card');
+// const indicators = document.querySelectorAll('.card-carousel-indicator');
+// const imageCard = document.querySelector('.image-card');
 
-const imageCards = document.querySelectorAll('.image-card-bg');
+// const imageCards = document.querySelectorAll('.image-card-bg');
 
 
-//const bgs = ["./assets/images/bg2.jpg", "./assets/images/bg3.jpg", "./assets/images/bg4.jpg"]
+// //const bgs = ["./assets/images/bg2.jpg", "./assets/images/bg3.jpg", "./assets/images/bg4.jpg"]
 
-function showSlide(slideIndex) {
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-    } else if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    }
+// function showSlide(slideIndex) {
+//     if (slideIndex < 0) {
+//         slideIndex = slides.length - 1;
+//     } else if (slideIndex >= slides.length) {
+//         slideIndex = 0;
+//     }
 
-    slides.forEach(slide => {
-        slide.style.transform = `translateX(-${slideIndex * 100}%)`;
-    });
+//     slides.forEach(slide => {
+//         slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+//     });
 
-    imageCards.forEach(imgc => {
-        imgc.style.transform = `translateX(-${slideIndex * 100}%)`;
-    });
+//     imageCards.forEach(imgc => {
+//         imgc.style.transform = `translateX(-${slideIndex * 100}%)`;
+//     });
 
     
 
-    indicators.forEach((indicator, index) => {
-        if (index === slideIndex) {
-            indicator.classList.add('card-carousel-indicator-active');
-        } else {
-            indicator.classList.remove('card-carousel-indicator-active');
-        }
-    });
+//     indicators.forEach((indicator, index) => {
+//         if (index === slideIndex) {
+//             indicator.classList.add('card-carousel-indicator-active');
+//         } else {
+//             indicator.classList.remove('card-carousel-indicator-active');
+//         }
+//     });
 
-    currentSlide = slideIndex;
-}
+//     currentSlide = slideIndex;
+// }
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
+// function nextSlide() {
+//     showSlide(currentSlide + 1);
+// }
 
-let slideInterval = setInterval(nextSlide, 7000);
+// let slideInterval = setInterval(nextSlide, 7000);
 
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        clearInterval(slideInterval);
-        showSlide(index);
-        slideInterval = setInterval(nextSlide, 7000);
-    });
-});
+// indicators.forEach((indicator, index) => {
+//     indicator.addEventListener('click', () => {
+//         clearInterval(slideInterval);
+//         showSlide(index);
+//         slideInterval = setInterval(nextSlide, 7000);
+//     });
+// });
